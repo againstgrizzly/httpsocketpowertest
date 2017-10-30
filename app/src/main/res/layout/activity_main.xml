@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bccenten.httpsocketpowertest.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/urlToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="Localhost"
+            android:textOn="Heroku" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="272dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Input"
+                    />
+
+                <TextView
+                    android:id="@+id/inputTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="231dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Output" />
+
+                <TextView
+                    android:id="@+id/outputTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_bright"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/outlet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outlet 1" />
+
+        <Switch
+            android:id="@+id/outlet2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outlet 2" />
+
+        <Switch
+            android:id="@+id/outlet3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outlet 3" />
+
+        <Switch
+            android:id="@+id/outlet4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outlet 4" />
+
+        <Switch
+            android:id="@+id/outlet5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outlet 5" />
+
+        <Switch
+            android:id="@+id/outlet6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outlet 6" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Http Socket Power Test</string>
+
+    <string name = "inputLabel">Input</string>
+    <string name = "outputLabel">Output</string>
+
+    <string name = "sampleClient">{\"client_id\":1,\"firstname\":\"John\",\"lastname\":\"Smith\",\"email\":\"comeatmebro@sample.com\",\"username\":\"dudebro64\",\"password\":\"password\",\"date_of_birth\":\"1911-11-11\",\"phonenumber\":1112223333,\"devices\":[{\"device_id\":\"460028000751353530373132\",\"access_token\":\"9753c88bb2723d4a882497bc80627a62270cb683\",\"outlets\":[{\"outlet_id\":1,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":2,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":3,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":4,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":5,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":6,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"}]}]}</string>
+    <string name = "urlTest">http://10.0.2.2:8080/webapi/services/test</string>
+
+
+
+</resources>
