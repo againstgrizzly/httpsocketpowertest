@@ -11,6 +11,7 @@ import android.widget.ToggleButton;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -103,9 +104,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
         outlet1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -157,7 +155,12 @@ public class MainActivity extends AppCompatActivity {
                 //String testCommand = "{\"yo\": 9}";
 
                 //Create client object
-                OkHttpClient client = new OkHttpClient();
+                OkHttpClient client = new OkHttpClient.Builder()
+                        .connectTimeout(2000, TimeUnit.MILLISECONDS)
+                        .readTimeout(2000, TimeUnit.MILLISECONDS)
+                        .writeTimeout(2000, TimeUnit.MILLISECONDS)
+                        .build();
+
 
                 //Transport the request and wait for response to process next
                 RequestBody body =
@@ -167,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
                         .url(urlTest)
                         .post(body)
                         .build();
+
                 Response response = client.newCall(request).execute();
 
                 return response.body().string();
@@ -175,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            return "ERROR";
+            return "TIMEOUT";
         }
 
         @Override
